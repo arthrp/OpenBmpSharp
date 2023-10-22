@@ -5,6 +5,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        var img = new BmpParser().Parse(args[0]);
+        var b = new BmpParser();
+        var img = b.Parse(args[0]);
+        b.Write(img, args[1]);
+        
+        Console.WriteLine("Done");
     }
 }
