@@ -64,7 +64,7 @@ public class BmpParser
         using var binaryWriter = new BinaryWriter(stream);
         
         binaryWriter.Write(BMP_FILE_ID);
-        binaryWriter.Write(BitConverter.GetBytes(b.Size));
+        binaryWriter.Write(b.Size);
         binaryWriter.Write(b.Reserved);
         binaryWriter.Write(b.DataOffset);
         binaryWriter.Write(b.HeaderSize);
