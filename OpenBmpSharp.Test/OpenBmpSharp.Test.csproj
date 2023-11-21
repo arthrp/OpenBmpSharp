@@ -20,4 +20,10 @@
       <ProjectReference Include="..\OpenBmpSharp\OpenBmpSharp.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="test.bmp">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
